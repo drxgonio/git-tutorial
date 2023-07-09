@@ -1,5 +1,7 @@
 # Dillinger
 
+# Some tip for Git command line:
+
 ## Git submodule
 
 Git create submobule
@@ -25,4 +27,39 @@ Commit to repository
 git add .
 git commit -m"change submodule"
 git push
+```
+
+### Tips
+#### Add file
+```
+git add .
+```
+### Commit file
+```
+git commit -m"commit file"
+```
+
+### Combine add and commit in single command(must be tracked file)
+```
+git commit -am "combine add & commit"
+```
+### Custom git command
+```
+git commit --global alias.drxgonio "!git add -A & git commit -m"
+git drxgonio "add & commit include file untrack"
+```
+
+### Git change message old commit
+```
+git commit --amend -m"change message done!"
+```
+
+### Git reset 
+- Hard reset
+```
+git reset --hard
+```
+- Soft reset
+```
+git reset --soft HEAD~1
 ```
